@@ -1,0 +1,38 @@
+{
+  "name": "tailwind-horizontal-scrollsnap-demo",
+  "description": "Demo with tailwindcss for horizontal scrolling with flex and a snap!",
+  "version": "1.0.0",
+  "license": "GPLv3",
+  "homepage": "",
+  "keywords": [
+    "tailwind",
+    "parcel",
+    "horizontal",
+    "snap",
+    "flex",
+    "css",
+    "demo"
+  ],
+  "author": "Benjamin Bender <bb@codepoet.de>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benbender/tailwind-horizontal-scrollsnap-demo"
+  },
+  "bugs": {
+    "url": "https://github.com/benbender/tailwind-horizontal-scrollsnap-demo/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx parcel src/index.html --port 3000",
+    "build": "npx parcel build src/index.html",
+    "prod": "serve -port 3000 dist/"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "parcel-bundler": "^1.12.4",
+    "postcss": "^7.0.32",
+    "tailwindcss": "^1.7.5",
+    "tailwindcss-scroll-snap": "^1.0.3"
+  }
+}
