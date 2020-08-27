@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Tailwind horizontal scrollsnap demo</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="description" content="Demo with tailwindcss for horizontal scrolling with flex and a snap!">
-        <meta name="keywords" content="tailwind, parcel, horizontal, snap, flex, css, demo">
-        <meta name="author" content="Benjamin Bender, bb@codepoet.de">
-        <link href="./assets/styles/app.css" rel="stylesheet" />
-    </head>
 
-    <body class="antialiased leading-normal tracking-normal overflow-hidden">
-        <main class="flex flex-col flex-nowrap snap snap-y snap-mandatory w-screen h-screen overscroll-contain  overflow-y-scroll overflow-x-hidden md:flex-row md:snap-x md:overflow-x-scroll md:overflow-y-hidden">
-            <section class="snap-start flex-none w-screen h-screen bg-red-500 items-center flex justify-center">
-                <h1 class="text-3xl font-sans font-medium tracking-tight md:text-6xl">Slide 1</h1>
-            </section>
+<head>
+    <title>Tailwind horizontal scrollsnap demo</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Demo with tailwindcss for horizontal scrolling with flex and a snap!">
+    <meta name="keywords" content="tailwind, parcel, horizontal, snap, flex, css, demo">
+    <meta name="author" content="Benjamin Bender, bb@codepoet.de">
+    <link href="./assets/styles/app.css" rel="stylesheet" />
+</head>
 
-            <section class="snap-start flex-none w-screen h-screen bg-green-500 items-center flex justify-center">
-                <h1 class="text-3xl font-sans font-medium tracking-tight md:text-6xl">Slide 2</h1>
-            </section>
+<body class="overflow-hidden antialiased leading-normal tracking-normal">
+    <main
+        class="flex flex-col w-screen h-screen overflow-x-hidden overflow-y-scroll flex-nowrap snap snap-y snap-mandatory overscroll-contain md:flex-row md:snap-x md:overflow-x-scroll md:overflow-y-hidden">
+        <section class="flex items-center justify-center flex-none w-screen h-screen bg-red-500 snap-start">
+            <h1 class="font-sans text-3xl font-medium tracking-tight md:text-6xl">Slide 1</h1>
+        </section>
 
-            <section class="snap-start flex-none w-screen h-screen bg-blue-500 items-center flex justify-center">
-                <h1 class="text-3xl font-sans font-medium tracking-tight md:text-6xl">Slide 3</h1>
-            </section>
+        <section class="flex items-center justify-center flex-none w-screen h-screen bg-green-500 snap-start">
+            <h1 class="font-sans text-3xl font-medium tracking-tight md:text-6xl">Slide 2</h1>
+        </section>
 
-            <section class="snap-start flex-none w-screen h-screen bg-yellow-500 items-center flex justify-center">
-                <h1 class="text-3xl font-sans font-medium tracking-tight md:text-6xl">Slide 4</h1>
-            </section>
+        <section class="flex items-center justify-center flex-none w-screen h-screen bg-blue-500 snap-start">
+            <h1 class="font-sans text-3xl font-medium tracking-tight md:text-6xl">Slide 3</h1>
+        </section>
 
-            <section class="snap-start flex-none w-screen h-screen bg-purple-500 items-center flex justify-center">
-                <h1 class="text-3xl font-sans font-medium tracking-tight md:text-6xl">Slide 5</h1>
-            </section>
-        </main>
-    </body>
+        <section class="flex items-center justify-center flex-none w-screen h-screen bg-yellow-500 snap-start">
+            <h1 class="font-sans text-3xl font-medium tracking-tight md:text-6xl">Slide 4</h1>
+        </section>
+
+        <section class="flex items-center justify-center flex-none w-screen h-screen bg-purple-500 snap-start">
+            <h1 class="font-sans text-3xl font-medium tracking-tight md:text-6xl">Slide 5</h1>
+        </section>
+    </main>
+</body>
+
 </html>
